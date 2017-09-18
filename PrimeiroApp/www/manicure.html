@@ -1,9 +1,8 @@
 <div class="page">
 
 	<div class="content row-center pink-100 align-center cover blend-soft-light" style="background-image: url(img/back);">
-					<button class="top icon ion-arrow-left-c" onclick="backPage()"></button>
+		<button class="top icon ion-arrow-left-c" onclick="backPage()"></button>
 		<div class="col" id="formulario-login">
-
 		<div class="list no-border">
 			<div class="item white opacity-70 margin-boton">
 				<input type="email" id="email" placeholder="Digite seu e-mail:">
@@ -14,7 +13,7 @@
 			</div> </div>
 
 			<div class="space-huge"></div>
-			<button class="pink-800 radius full" onclick="logar()">Logar no App</button>
+			<button class="pink-800 radius full" onclick="logarm()">Logar no App</button>
 
 			<div class="space"></div>
 			<button class="border pink-800 text-white radius full" onclick="exibirCadastro()">Criar Cadastro 
@@ -22,6 +21,7 @@
 		</div>
 
 		<div class="col hidden" id="formulario-cadastro">
+
 
 			<div class="list no-border">
 				<div class="item white opacity-70 margin-boton">
@@ -39,13 +39,34 @@
 				<div class="item white opacity-70 margin-boton">
 					<input type="password" id="cadastroSenha2" placeholder="Confirme sua senha">
 				</div>
-				<div class="space-huge"></div>
+				<div class="space"></div>
+				<div class="item white opacity-70 margin-boton">
+					<input type="text" id="endereco" placeholder="Digite seu endereço: ">
+				</div>
+
+				<div class="space"></div>
+
+				<p class="align-left ">Qual seu tipo de atendimento?</p>
+				<div class="item align-left white opacity-70 margin-boton">
+					<p>Na sua casa</p>
+					<div class="right">
+						<input type="radio" name="atendimento" class="teal">
+					</div>
+				</div>
+
+				<div class="item align-left white opacity-70 margin-boton">
+					<p>Casa do cliente</p>
+					<div class="right">
+						<input type="radio" name="atendimento2" class="teal">
+					</div>
+				</div>
 			</div>
+			<div class="space"></div>
 			<button class="pink-800 full margin-boton" onclick="cadastrar()">
 				Cadastrar!
 			</button>
 			<div class="space"></div>
-			<button class=" no text-pink-800 full" onclick="exibirLogin()">
+			<button class=" no-border text-pink-900 full" onclick="exibirLogin()">
 				Login
 			</button>
 		</div>
