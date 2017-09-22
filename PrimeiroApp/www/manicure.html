@@ -1,63 +1,58 @@
 <div class="page">
 
 	<div class="content row-center pink-100 align-center cover blend-soft-light" style="background-image: url(img/back);">
-	<button class="top icon ion-home" onclick="backPage()"></button>
-
+		<a class="top icon ion-home padding" href="../index.html"></a>
 		<div class="col" id="formulario-login">
-		
-		<div class="list no-border">
-			<div class="item white opacity-70 margin-boton">
-				<input type="email" id="email" placeholder="Digite seu e-mail:">
+			<div class="list no-border">
+				<div class="item white opacity-70">
+					<input type="email" id="email" placeholder="Digite seu e-mail:">
+				</div>
+				<!--<div class="space"></div>--><br><br>
+				<div class="item white opacity-70">
+					<input type="password" id="senha" placeholder="Digite sua senha:">
+				</div> </div>
+
+				<div class="space-huge"></div>
+				<button class="pink-800 radius full" onclick="logarm()">Logar no App</button>
+
+				<div class="space"></div>
+				<button class="border pink-800 text-white radius full" onclick="exibirCadastro()">Criar Cadastro 
+				</button>
 			</div>
-			<div class="space"></div>
-			<div class="item white opacity-70 margin-boton">
-				<input type="password" id="senha" placeholder="Digite sua senha:">
-			</div> </div>
-
-			<div class="space-huge"></div>
-			<button class="pink-800 radius full" onclick="logarm()">Logar no App</button>
-
-			<div class="space"></div>
-			<button class="border pink-800 text-white radius full" onclick="exibirCadastro()">Criar Cadastro 
-			</button>
-		</div>
 
 
 		<div class="col hidden" id="formulario-cadastro">
 			<br><br>
-			<div class="list no-border">
-
-				<div class="item white opacity-70 margin-boton">
-					<input type="text" id="cadastroNome" placeholder="Digite seu Nome">
+			<div class="list no-border margin-top">
+			<br><br>
+				<div class="item white opacity-70">
+					<input type="text" id="cadastroNome" placeholder="Digite seu nome">
 				</div>
-				<div class="space"></div>
-				<div class="item white opacity-70 margin-boton">
+				<!--<div class="space"></div>--><br><br>
+				<div class="item white opacity-70">
 					<input type="email" id="cadastroEmail" placeholder="Digite seu e-mail">
 				</div>
-				<div class="space"></div>
-				<div class="item white opacity-70 margin-boton">
+				<!--<div class="space"></div>--><br><br>
+				<div class="item white opacity-70">
 					<input type="password" id="cadastroSenha" placeholder="Digite sua senha">
 				</div>
-				<div class="space"></div>
-				<div class="item white opacity-70 margin-boton">
+				<!--<div class="space"></div>--><br><br>
+				<div class="item white opacity-70">
 					<input type="password" id="cadastroSenha2" placeholder="Confirme sua senha">
 				</div>
-				<div class="space"></div>
-				<div class="item white opacity-70 margin-boton">
+				<!--<div class="space"></div>--><br><br>
+				<div class="item white opacity-70 margin-bottom">
 					<input type="text" id="endereco" placeholder="Digite seu endereço: ">
 				</div>
-
-				<div class="space"></div>
-
+				<br>
 				<p class="align-left ">Qual seu tipo de atendimento?</p>
-				<div class="item align-left white opacity-70 margin-boton">
+				<div class="item align-left white opacity-70 margin-bottom">
 					<p>Na sua casa</p>
 					<div class="right">
 						<input type="radio" name="atendimento" class="teal">
 					</div>
 				</div>
-
-				<div class="item align-left white opacity-70 margin-boton">
+				<div class="item align-left white opacity-70 margin-bottom">
 					<p>Casa do cliente</p>
 					<div class="right">
 						<input type="radio" name="atendimento2" class="teal">
@@ -65,10 +60,9 @@
 				</div>
 			</div>
 			<div class="space"></div>
-			<button class="pink-800 full margin-boton" onclick="cadastrar()">
+			<button class="pink-800 full margin-bottom" onclick="cadastrar()">
 				Cadastrar!
 			</button>
-			<div class="space"></div>
 			<button class=" no-border text-pink-900 full" onclick="exibirLogin()">
 				Login
 			</button>
