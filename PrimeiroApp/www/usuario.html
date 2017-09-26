@@ -1,15 +1,14 @@
 <div class="page">
 
 	<div class="content row-center pink-100 align-center cover blend-soft-light" style="background-image: url(img/back);">
-	<button class="top icon ion-home" onclick="backPage()"></button>
+		<a class="top icon ion-home padding" href="../index.html"></a>
 		<div class="col" id="formulario-login">
-
 		<div class="list no-border">
-			<div class="item white opacity-70 margin-boton">
+			<div class="item white opacity-70">
 				<input type="email" id="email" placeholder="Digite seu e-mail:">
 			</div>
 			<div class="space"></div>
-			<div class="item white opacity-70 margin-boton">
+			<div class="item white opacity-70">
 				<input type="password" id="senha" placeholder="Digite sua senha:">
 			</div> </div>
 
@@ -22,30 +21,29 @@
 		</div>
 
 		<div class="col hidden" id="formulario-cadastro">
-
-			<div class="list no-border">
-				<div class="item white opacity-70 margin-boton">
+			<div class="list no-border margin-top">
+				<div class="item white opacity-70">
 					<input type="text" id="cadastroNome" placeholder="Digite seu Nome">
 				</div>
 				<div class="space"></div>
-				<div class="item white opacity-70 margin-boton">
+				<div class="item white opacity-70">
 					<input type="email" id="cadastroEmail" placeholder="Digite seu e-mail">
 				</div>
 				<div class="space"></div>
-				<div class="item white opacity-70 margin-boton">
+				<div class="item white opacity-70">
 					<input type="password" id="cadastroSenha" placeholder="Digite sua senha">
 				</div>
 				<div class="space"></div>
-				<div class="item white opacity-70 margin-boton">
+				<div class="item white opacity-70">
 					<input type="password" id="cadastroSenha2" placeholder="Confirme sua senha">
 				</div>
 				<div class="space-huge"></div>
 			</div>
-			<button class="pink-800 full margin-boton" onclick="cadastrar()">
+			<button class="pink-800 full" onclick="cadastrar()">
 				Cadastrar!
 			</button>
 			<div class="space"></div>
-			<button class=" no text-pink-800 full" onclick="exibirLogin()">
+			<button class="white-opacity-50 full" onclick="exibirLogin()">
 				Login
 			</button>
 		</div>
