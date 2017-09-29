@@ -1,48 +1,54 @@
 <div class="page" style="font-family: 'Montserrat';">
 
 	<div class="content row-center pink-100 align-center cover blend-soft-light" style="background-image: url(img/back);">
-		<a class="top icon ion-home padding" href="../index.html"></a>
+		<div style="font-family: 'Playball'" class="header red-300">
+			<a class="top icon ion-home padding text-white" href="../index.html"></a>
+			<h1 class="text-huge text-white">Manicure</h1>
+		</div>
 		<div class="col" id="formulario-login">
 			<div class="list no-border">
-				<div class="item white opacity-70">
-					<input type="email" id="email" placeholder="Digite seu e-mail:">
+				<div style="font-family: 'Crete Round'" class="item white opacity-70">
+					<input style="font-family: 'Crete Round'" type="email" id="email" placeholder="Digite seu e-mail:">
 				</div>
 				<!--<div class="space"></div>--><br><br>
-				<div class="item white opacity-70">
-					<input type="password" id="senha" placeholder="Digite sua senha:">
+				<div style="font-family: 'Crete Round'" class="item white opacity-70">
+					<input style="font-family: 'Crete Round'" type="password" id="senha" placeholder="Digite sua senha:">
 				</div> </div>
 
 				<div class="space-huge"></div>
-				<button class="pink-800 radius full" onclick="logar()">Logar no App</button>
+				<button style="font-family: 'Crete Round'" class="pink-800 radius full" onclick="logarManicure()">
+					Logar no App
+				</button>
 
 				<div class="space"></div>
-				<button class="border pink-800 text-white radius full" onclick="exibirCadastro()">Criar Cadastro 
+				<button style="font-family: 'Crete Round'" class="border pink-800 text-white radius full" onclick="exibirCadastroManicure()">
+					Criar Cadastro 
 				</button>
 			</div>
 
 
-		<div class="col hidden" id="formulario-cadastro">
-			<br><br>
+		<div style="font-family: 'Crete Round'" class="col hidden" id="formulario-cadastro">
+			<br>
 			<div class="list no-border margin-top">
 			<br><br>
 				<div class="item white opacity-70">
-					<input type="text" id="cadastroNome" placeholder="Digite seu nome">
+					<input style="font-family: 'Crete Round'" type="text" id="cadastroNome" placeholder="Digite seu nome">
 				</div>
 				<!--<div class="space"></div>--><br><br>
 				<div class="item white opacity-70">
-					<input type="email" id="cadastroEmail" placeholder="Digite seu e-mail">
+					<input style="font-family: 'Crete Round'" type="email" id="cadastroEmail" placeholder="Digite seu e-mail">
 				</div>
 				<!--<div class="space"></div>--><br><br>
 				<div class="item white opacity-70">
-					<input type="password" id="cadastroSenha" placeholder="Digite sua senha">
+					<input style="font-family: 'Crete Round'" type="password" id="cadastroSenha" placeholder="Digite sua senha">
 				</div>
 				<!--<div class="space"></div>--><br><br>
 				<div class="item white opacity-70">
-					<input type="password" id="cadastroSenha2" placeholder="Confirme sua senha">
+					<input style="font-family: 'Crete Round'" type="password" id="cadastroSenha2" placeholder="Confirme sua senha">
 				</div>
 				<!--<div class="space"></div>--><br><br>
 				<div class="item white opacity-70 margin-bottom">
-					<input type="text" id="endereco" placeholder="Digite seu endereço: ">
+					<input style="font-family: 'Crete Round'" type="text" id="endereco" placeholder="Digite seu endereço: ">
 				</div>
 				<br>
 				<p class="align-left ">Qual seu tipo de atendimento?</p>
@@ -59,11 +65,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="space"></div>
-			<button class="pink-800 full margin-bottom" onclick="cadastrar()">
+			<button style="font-family: 'Crete Round'" class="pink-800 full margin-bottom" onclick="cadastrarManicure()">
 				Cadastrar!
 			</button>
-			<button class=" no-border text-pink-900 full" onclick="exibirLogin()">
+			<button style="font-family: 'Crete Round'" class="white-opacity-50 full" onclick="exibirLoginManicure()">
 				Login
 			</button>
 		</div>

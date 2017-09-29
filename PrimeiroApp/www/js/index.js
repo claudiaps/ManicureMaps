@@ -1,3 +1,4 @@
+/*****************USUÁRIO**********************/
 function exibirCadastro(){
 	MobileUI.hide('formulario-login');
 	MobileUI.show('formulario-cadastro');
@@ -18,7 +19,31 @@ function logar(){
 	}
 }
 
-
 function cadastrar(){
+	alert("teste")
+}
+
+/*****************MANICURE**********************/
+function exibirCadastroManicure(){
+	MobileUI.hide('formulario-login');
+	MobileUI.show('formulario-cadastro');
+}
+
+function exibirLoginManicure(){
+	MobileUI.show('formulario-login');
+	MobileUI.hide('formulario-cadastro');
+}
+
+function logarManicure(){
+	var manicure = MobileUI.objectByForm('formulario-login');
+	if (manicure.email == "" || manicure.senha == ""){
+		alert("Digite o seu e-mail e senha!");
+	}
+	else{
+		openPage('perfil_manicure');
+	}
+}
+
+function cadastrarManicure(){
 	alert("teste")
 }
