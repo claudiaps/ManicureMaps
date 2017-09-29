@@ -18,6 +18,7 @@ function logar(){
 	}
 }
 
+
 function cadastrar(){
 	alert("teste")
 }
